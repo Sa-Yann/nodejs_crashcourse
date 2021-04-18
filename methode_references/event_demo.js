@@ -6,6 +6,7 @@
 // Metaphore: you try to push somebody , he emmits the function pushback to not fall
 
 const EventEmitter = require('events')
+const Logger = require('../methode_references/event_demo')
 
 class MyEmitter extends EventEmitter { }
 
