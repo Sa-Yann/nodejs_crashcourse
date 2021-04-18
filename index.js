@@ -8,10 +8,10 @@
 // Wrong result we only get a table where the constructor innfo but the link to the fucntion is not working
 // ---------------------------------------
 
-const Person = require('./personn2')
+// const Person = require('./personn2')
 
-const person1 = new Person('Saiyann', 40)
-person1.greeting();
+// const person1 = new Person('Saiyann', 40)
+// person1.greeting();
 
 // ---------------------------------------------------------------------------------------------------
 // good result the same class name is used is both the file required and the the file that is requiring
