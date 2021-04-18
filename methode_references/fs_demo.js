@@ -43,10 +43,23 @@ let folderWhereToCreateTheNewFile = 'test'
 //  read an existing  file 
 // ------------------------------------------------------
 
-fs.readFile(path.join(__dirname, folderWhereToCreateTheNewFile, createdFile), 'utf-8', (err, data) => {
-    if (err) throw err
-    console.log(`check the content of the file : ${createdFile} is in the terminal`)
-    console.log(data)
-})
+// fs.readFile(path.join(__dirname, folderWhereToCreateTheNewFile, createdFile), 'utf-8', (err, data) => {
+//     if (err) throw err
+//     console.log(`check the content of the file : ${createdFile} is in the terminal`)
+//     console.log(data)
+// })
+
+//// ------------------------------------------------------
+//  rename an existing  file 
+// ------------------------------------------------------
+
+let newFileName = 'newCreatedFile.txt'
+fs.rename(
+    path.join(__dirname, folderWhereToCreateTheNewFile, createdFile),
+    path.join(__dirname, folderWhereToCreateTheNewFile, newFileName),
+    (err) => {
+        if (err) throw err
+        console.log(` ${createdFile} s'appelle mainetnant ${newFileName}`)
+    })
 
 
