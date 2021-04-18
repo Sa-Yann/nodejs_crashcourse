@@ -51,7 +51,9 @@ console.log(path.parse(__filename).ext)
 
 const newPathFile = `test/hello_test.html`
 console.log(path.join(__dirname, `${newPathFile}`))
-// it will allow us to create a new folder with a new file
+// it will allow us to create a new path or to build a const with a specified path
+console.log(path.join(__dirname, 'dossiertest', 'sousdossiertest', 'nomdudocument.txt'))
+
 
 
 
